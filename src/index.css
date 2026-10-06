@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+:root {
+  /* PLMS Brand — extracted from logo */
+  --navy:        #0D1B5E;
+  --navy-mid:    #1565C0;
+  --royal:       #1976D2;
+  --blue-mid:    #2196F3;
+  --sky:         #42A5F5;
+  --sky-light:   #90CAF9;
+  --indigo:      #3F2DC8;
+  --purple-acc:  #7C3AED;
+
+  /* Surfaces */
+  --background:          #F0F4FF;
+  --foreground:          #0D1B5E;
+  --card:                #FFFFFF;
+  --card-foreground:     #1E293B;
+  --sidebar-bg:          #0D1B5E;
+  --sidebar-text:        #CBD5F0;
+  --sidebar-active:      #1565C0;
+
+  /* Interactive */
+  --primary:             #1565C0;
+  --primary-foreground:  #FFFFFF;
+  --secondary:           #E8EFF9;
+  --secondary-foreground: #1565C0;
+  --muted:               #F1F5F9;
+  --muted-foreground:    #64748B;
+  --accent:              #7C3AED;
+  --accent-foreground:   #FFFFFF;
+  --border:              #D1DAEA;
+  --ring:                #42A5F5;
+  --radius:              0.625rem;
+
+  /* Status */
+  --success:  #16A34A;
+  --warning:  #D97706;
+  --danger:   #DC2626;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+}
+
+/* Hide scrollbars until hover */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #C7D7F0; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #94AFD8; }
+
+/* Sidebar scrollable area */
+.sidebar-scroll {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #1E3A78 transparent;
+}

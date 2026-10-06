@@ -1,0 +1,10 @@
+{
+  "description": "Delivers a cohesive user interface by extracting and applying brand colors and styles from an uploaded logo to ensure consistent visual identity across all pages.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
